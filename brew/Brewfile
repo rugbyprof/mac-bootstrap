@@ -1,0 +1,57 @@
+############################
+# Core CLI Utilities
+############################
+
+brew "git"        # version control; required for literally everything
+brew "wget"       # reliable CLI downloader (curl is good, wget is blunt)
+brew "ripgrep"    # absurdly fast recursive search (rg > grep)
+brew "fd"         # modern, user-friendly replacement for find
+brew "tree"       # visual directory trees (still useful, still underrated)
+brew "jq"         # JSON processor; mandatory for modern dev work
+brew "yq"         # YAML processor; pairs with jq, critical for config work
+brew "htop"       # interactive process viewer (better than top)
+brew "tmux"       # terminal multiplexer; survives SSH, splits panes
+brew "rsync"      # fast, reliable file syncing and backups
+
+############################
+# Developer Essentials
+############################
+
+brew "cmake"      # cross-platform build system generator
+brew "pkg-config" # compiler/linker flag discovery for native libs
+brew "llvm"       # modern Clang/LLVM toolchain (Apple-friendly)
+brew "sqlite"     # embedded database; used constantly in teaching & tools
+brew "node"       # Node.js runtime (JS tooling, CLIs, build systems)
+brew "pipx"       # isolated installs for Python CLI tools (no global pip mess)
+
+############################
+# GUI Applications (Casks)
+############################
+
+cask "iterm2"             # terminal emulator that doesn't hate developers
+cask "visual-studio-code" # editor of record (unavoidable, extensible)
+cask "google-chrome"      # primary browser for dev & testing
+cask "firefox"            # secondary browser (standards + debugging)
+cask "slack"              # academic + team communication reality
+cask "zoom"               # meetings, office hours, remote teaching
+cask "obsidian"           # markdown-based knowledge base / notes
+cask "raycast"            # launcher + automation (Spotlight, but good)
+
+
+############################
+# Media & Image Tooling
+############################
+
+brew "imagemagick"  # image conversion, resizing, thumbnails, scripts rely on it
+brew "ffmpeg"       # audio/video processing, screen capture, format conversion
+
+############################
+# Random Utilities
+############################
+
+brew "caffeine"        # keeps Mac awake; useful for long-running tasks, presentations, etc.
+brew "p7zip"           # file archiver with high compression ratio
+brew "the_silver_searcher" # code-searching tool similar to ack, but faster
+brew "trash"           # CLI tool to move files to the Trash instead of deleting
+brew "mas"             # Mac App Store CLI; useful for scripting app installs and updates
+brew "monitorcontrol"            # CLI tool to control external monitor settings (brightness, volume, etc.)
