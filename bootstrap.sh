@@ -16,7 +16,7 @@ log "mac-bootstrap starting"
 [[ "$RESTORE_SSH" == true ]]      && source ssh/ssh.sh
 [[ "$CONFIGURE_MACOS" == true ]]  && source macos/defaults.sh
 [[ "$CONFIGURE_GIT" == true ]]    && source git/git.sh
-[[ "$CONFIGURE_DOCK" == true ]] && source macos/dock.sh
+[[ "$CONFIGURE_DOCK" == true ]]   && source macos/dock.sh
 
 
 

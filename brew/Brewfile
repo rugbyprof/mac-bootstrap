@@ -12,6 +12,8 @@ brew "yq"         # YAML processor; pairs with jq, critical for config work
 brew "htop"       # interactive process viewer (better than top)
 brew "tmux"       # terminal multiplexer; survives SSH, splits panes
 brew "rsync"      # fast, reliable file syncing and backups
+brew "dockutil"   # manage Dock items from the command line (for scripting setups)
+brew "lazygit"     # simple terminal UI for git commands; good for staging, commits, etc.
 
 ############################
 # Developer Essentials
