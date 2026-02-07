@@ -3,15 +3,14 @@ EMAIL="terry.griffin@msutexas.edu"
 
 
 # Behavior flags
-DRY_RUN=true        # ← flip to false to actually execute
+#DRY_RUN=true        # ← flip to false to actually execute
+DRY_RUN=false        # ← flip to false to actually execute
 
 
-INSTALL_BREW=true
+INSTALL_BREW=false
 INSTALL_MAS=false
 INSTALL_PYTHON=true
-INSTALL_PIPX=true
-RESTORE_SSH_KEYS=true
-CLONE_REPOS=true
+RESTORE_SSH=true
 CONFIGURE_GIT=true
 CONFIGURE_MACOS=true
 CONFIGURE_DOCK=true

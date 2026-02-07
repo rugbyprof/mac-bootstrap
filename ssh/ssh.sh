@@ -5,7 +5,7 @@ source lib/logging.sh
 log "Setting up SSH"
 
 SSH_DIR="$HOME/.ssh"
-IMPORT_DIR="$HOME/Desktop/installer_files/ssh"
+IMPORT_DIR="$HOME/Secret/ssh"
 KEY="$SSH_DIR/id_ed25519"
 
 run "mkdir -p $SSH_DIR"

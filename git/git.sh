@@ -18,7 +18,7 @@ log "Git global config step complete"
 
 if [[ \"$DRY_RUN\" != true ]]; then
   log "Git config summary:"
-  git config --global --list
+  #git config --global --list
 else
   log "DRY RUN: git config summary skipped"
 fi

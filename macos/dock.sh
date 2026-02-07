@@ -20,6 +20,21 @@ run "defaults write com.apple.dock tilesize -int 48"
 run "defaults write com.apple.dock autohide -bool true"
 run "defaults write com.apple.dock mru-spaces -bool false"
 
+
+APPS=("Safari" "Pages" "Numbers" "Keynote" "TV" "Contacts")
+DEST="$HOME/Desktop/Apple_Apps"
+
+log "Managing default Apple apps"
+
+run "mkdir -p \"$DEST\""
+
+for app in "${APPS[@]}"; do
+  log "Creating alias for $app"
+  run "osascript -e 'tell application \"Finder\" to make alias file to POSIX file \"/Applications/$app.app\" at POSIX file \"$DEST\"'"
+  log "Removing $app from Dock"
+  run "dockutil --remove \"$app\" --no-restart" || true
+done
+
 ########################################
 # Reset Dock (this is intentional)
 ########################################
@@ -33,7 +48,7 @@ run "dockutil --no-restart --remove all"
 
 log "Adding browser group"
 run "dockutil --no-restart --add /Applications/Google\\ Chrome.app"
-run "dockutil --no-restart --add /Applications/Firefox.app"
+# run "dockutil --no-restart --add /Applications/Firefox.app"
 
 log "Adding development tools"
 run "dockutil --no-restart --add /Applications/Visual\\ Studio\\ Code.app"
